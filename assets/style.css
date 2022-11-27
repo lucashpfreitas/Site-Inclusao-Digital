@@ -1,0 +1,351 @@
+/* padrão 
+===============================================================================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    font-size: 2vmin;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    background: rgb(4, 0, 9);
+}
+
+
+/*
+main>* {
+    margin-top: 10px;
+}
+*/
+
+main * {}
+
+/* cabecalho
+===============================================================================================
+*/
+
+header {
+    position: relative;
+    display: absolute;
+}
+
+header #banner {
+    width: 100%;
+    height: 100px;
+    background-color: #64078C;
+}
+
+header .menu {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+
+.menu .itenMenu {
+    width: 4vw;
+    height: 6vh;
+    display: inline-block;
+}
+
+.menu .itenMenu:nth-child(1) {
+    background-image: url(icones/icons8-book-reading-30.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menu .itenMenu:nth-child(2) {
+    background-image: url(icones/icons8-info-squared-30.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Convite
+===============================================================================================
+ */
+
+#convite {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #0E0B26;
+}
+
+#convite #container {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    position: relative;
+    animation-name: rolagemConvite;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: clamp(5px, 1vw, 20px);
+}
+
+#convite #container img {
+    height: clamp(5vh, 3em, 6vh);
+    margin-right: 10px;
+}
+
+#convite #container h2 {
+    font-size: clamp(13px, 1.2em, 60px);
+}
+
+@keyframes rolagemConvite {
+    0% {
+        left: 2%;
+        opacity: 0%;
+    }
+
+    10% {
+        opacity: 100%;
+    }
+
+    80% {
+        opacity: 90%;
+    }
+
+    100% {
+        left: 49%;
+        opacity: 0%;
+    }
+}
+
+/*
+seção 1
+============================================================================================== 
+ */
+
+#conteudo1 {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    background-color: #03131c;
+}
+
+#conteudo1 #container {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#conteudo1 #texto {
+    width: 50%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo1 #texto h2 {
+    width: 100%;
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#conteudo1 #texto blockquote {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: right;
+    font-style: italic;
+}
+
+#conteudo1 #texto p{
+    width: 100%;
+    height: 50%;
+    font-size: 18px;
+    margin-top: 14px;
+    text-align: left;
+}
+
+#conteudo1 #imgDestaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    content: url(img/inclusao1.jpg);
+}
+
+/*
+seção 2
+============================================================================================== 
+ */
+
+ #conteudo2 {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    background-color: #101010;
+}
+
+#conteudo2 #container {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+#conteudo2 #texto {
+    width: 50%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo2 #texto p{
+    width: 100%;
+    height: 50%;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#conteudo2 #texto p a {
+    text-decoration: none;
+    font-style: inherit;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+#conteudo2 #imgDestaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    content: url(img/inclusao3.jpg);
+    object-fit: cover;
+}
+/* 
+
+seção3
+===============================================================================================
+*/
+
+#conteudo3 {
+    display: flex;
+    height: auto;
+    padding: 20px;
+    background-color: #0E0B26;
+}
+
+#conteudo3 #container  {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+
+#conteudo3 #texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+#conteudo3 #texto h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#conteudo3 #texto span {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#conteudo3 #texto h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#conteudo3 #texto p {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+/* 
+seção4
+===============================================================================================
+*/
+#conteudo4 {
+    margin-top: 20px;
+}
+
+#conteudo4 #container {
+    color: aliceblue;
+}
+
+/* 
+
+seção5
+===============================================================================================
+*/
+#conteudo5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo5 #container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50vh;
+}
+
+#conteudo5 #container>video {
+    width: 50%;
+}
+
+#conteudo5 #container>#sugestao {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#conteudo5 #container>#sugestao>.item {
+    border-radius: 10px;
+    width: 10vw;
+    height: 10vw;
+}
+
+#conteudo5 .item:nth-child(1) {
+    content: url(https://storage.googleapis.com/ares-profile-pictures/hd/cfbcursos-3908a7dde0140950b3318a341415a0b3_hd.jpg);
+}
+
+#conteudo5 .item:nth-child(2) {
+    content: url(https://i.ytimg.com/vi/kwYp_KliIeM/maxresdefault.jpg);
+}
+
+#conteudo5 .item:nth-child(3) {
+    content: url(https://www.cursoemvideo.com/wp-content/uploads/2019/08/guana6.png);
+}
+
+#conteudo5 .item:nth-child(4) {
+    content: url(https://storage.googleapis.com/ares-profile-pictures/hd/cfbcursos-3908a7dde0140950b3318a341415a0b3_hd.jpg);
+}
+
+#conteudo5 .item:nth-child(5) {
+    content: url(https://storage.googleapis.com/ares-profile-pictures/hd/cfbcursos-3908a7dde0140950b3318a341415a0b3_hd.jpg);
+}
+
+#conteudo5 .item:nth-child(6) {
+    content: url(https://storage.googleapis.com/ares-profile-pictures/hd/cfbcursos-3908a7dde0140950b3318a341415a0b3_hd.jpg);
+}
